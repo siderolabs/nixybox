@@ -1,4 +1,4 @@
-FROM ghcr.io/siderolabs/stagex/core-busybox:2026.06.0@sha256:d5635b945c50a0170bea2900141665707c196eacfe2d7c34cf1254c81c1a5cef AS busybox
+FROM ghcr.io/siderolabs/stagex/core-busybox:2026.09.0@sha256:59b3d3e754c09c408e598fe32c52bfbd99c3a0a7aa52c356768e1d3d9a46562f AS busybox
 
 FROM scratch AS build
 COPY --from=busybox / /
